@@ -1,9 +1,12 @@
 package org.zhire.sharding.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 /**
  * @Author: chenqi
  * @Date: 2020.4.16 15:57
  */
+@TableName("orders")
 public class OrderDO {
     /**
      * 订单编号
