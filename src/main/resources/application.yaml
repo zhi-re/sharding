@@ -23,7 +23,7 @@ spring:
     # 分片规则
     sharding:
       tables:
-        # orders 表配置
+        # orders 表配置 （逻辑表。即xml下执行sql语句的表）
         orders:
           actualDataNodes: ds0.orders_$->{[0,1]}, ds1.orders_$->{[0,1]} # 映射到 ds0 和 ds1 数据源的 orders 表
           key-generator: # 主键生成策略
